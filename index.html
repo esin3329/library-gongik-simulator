@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>도서관 공익 시뮬레이터 — 어린이실 9 to 6</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="app">
+  <header id="hud">
+    <div><div class="clock" id="clock">09:00</div><div class="date" id="date"></div></div>
+    <div class="stat">이용자 <b id="patrons">0</b>명 <span id="crowd"></span></div>
+    <div class="meter">💪 체력<div class="bar"><i id="bSta" style="background:#4caf50"></i></div></div>
+    <div class="meter">🦴 허리 통증<div class="bar"><i id="bBack" style="background:#e57373"></i></div></div>
+    <div class="meter">👩‍💼 사서님 신뢰도<div class="bar"><i id="bRep" style="background:#64b5f6"></i></div></div>
+    <div class="stat">처리 <b id="done">0</b>권 · 배가 <b id="shelved">0</b>권</div>
+    <div class="stat scorebox">점수 <b id="score">0</b> <span id="combo" class="combo hide"></span> <span id="rushTag" class="rushtag" style="display:none">🎒 단체 방문 ×1.5</span></div>
+    <div class="snd"><button id="tMusic" data-a="music">🎵</button><button id="tSfx" data-a="sfxt">🔊</button></div>
+    <div id="dday">소집해제 D-365</div>
+  </header>
+  <nav id="tabs"></nav>
+  <div id="main">
+    <main id="view"></main>
+    <aside id="tasks"></aside>
+  </div>
+</div>
+<div id="busy"></div>
+<div id="log"></div>
+<div id="overlay"></div>
+
+<script src="js/data.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/books.js"></script>
+<script src="js/core.js"></script>
+<script src="js/desk.js"></script>
+<script src="js/shelf.js"></script>
+<script src="js/entrance.js"></script>
+<script src="js/corner.js"></script>
+<script src="js/dock.js"></script>
+<script src="js/rest.js"></script>
+<script src="js/fun.js"></script>
+<script>boot();</script>
+</body>
+</html>
