@@ -4,7 +4,7 @@
 09:00 출근부터 18:00 퇴근까지, 쏟아지는 반납 책과 업무 시간표를 버텨 내세요.
 
 ## 플레이
-- 브라우저에서 바로: GitHub Pages 링크
+- 브라우저에서 바로: https://esin3329.github.io/library-gongik-simulator/
 - 로컬: `node serve.js` 실행 후 http://localhost:8123
 
 ## 하루 흐름
